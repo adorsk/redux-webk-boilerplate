@@ -3,7 +3,7 @@ var webpack = require('webpack');
 var webpackCommonConfig = require('../webpack/webpack.conf.common');
 
 
-function makeDefaultConfig () {
+function makeDefaultConfig (karmaConfig) {
   return {
     files : [
       '../node_modules/babel-core/browser-polyfill.js',
@@ -43,4 +43,5 @@ function makeDefaultConfig () {
   };
 }
 
-module.exports = (karmaConfig) => karmaConfig.set(makeDefaultConfig());
+module.exports = (karmaConfig) => karmaConfig.set(
+  makeDefaultConfig(karmaConfig));
