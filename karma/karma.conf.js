@@ -6,8 +6,7 @@ var webpackCommonConfig = require('../webpack/webpack.conf.common');
 function makeDefaultConfig (karmaConfig) {
   return {
     files : [
-      '../node_modules/babel-core/browser-polyfill.js',
-      '../node_modules/phantomjs-polyfill/bind-polyfill.js',
+      '../node_modules/babel-polyfill/dist/polyfill.js',
       './karma-entry-point.js',
     ],
     singleRun: true,
