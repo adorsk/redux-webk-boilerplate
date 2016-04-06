@@ -16,6 +16,7 @@ function makeDefaultConfig () {
       './karma-entry-point.js': ['webpack', 'sourcemap']
     },
     reporters: ['jasmine-diff', 'dots'],
+    logLevel: karmaConfig.LOG_ERROR,
     browsers: ['PhantomJS'],
     webpack: Object.assign({}, webpackCommonConfig, {
       devtool: 'inline-source-map',

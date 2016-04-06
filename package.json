@@ -49,6 +49,7 @@
     "eventsource-polyfill": "^0.9.6",
     "express": "^4.13.3",
     "html-webpack-plugin": "^2.8.1",
+    "http-proxy": "^1.13.2",
     "jasmine-core": "^2.3.4",
     "karma": "^0.13.21",
     "karma-coverage": "^0.5.0",
